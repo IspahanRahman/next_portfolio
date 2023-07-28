@@ -24,7 +24,7 @@ const about = () => {
                   new and innovative ways to bring my clients' visions to life.
               </p>
               <p className='my-4 font-medium'>
-                I believe that design is about more than just making things look pretty – it's about solving problems and 
+                I believe that design is about more than just making things look pretty it's about solving problems and 
                 creating intuitive, enjoyable experiences for users. 
               </p>
               <p className='font-medium'>
