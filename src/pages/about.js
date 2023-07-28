@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Layout from '@/components/Layout';
 import AnimatedText from '@/components/AnimatedText';
-import profilePic3 from "../../public/images/profile/profilePic3.jpg";
+import profilepic3 from "../../public/images/profile/profilepic3.jpg";
 import Image from 'next/image';
 
 const about = () => {
@@ -35,7 +35,7 @@ const about = () => {
             </div>
             <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8'>
               <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark'/>
-              <Image src={profilePic3} alt="ProfilePic" className="w-full h-auto rounded-2xl"/>
+              <Image src={profilepic3} alt="ProfilePic" className="w-full h-auto rounded-2xl"/>
             </div>
             <div className='col-span-2 flex flex-col items-center justify-between'>
               <div className='flex flex-col items-end justify-center'>
