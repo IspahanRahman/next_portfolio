@@ -1,9 +1,36 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Head from 'next/head';
 import Layout from '@/components/Layout';
 import AnimatedText from '@/components/AnimatedText';
 import profilepic3 from "../../public/images/profile/profilepic3.jpg";
 import Image from 'next/image';
+import { motion, motionValue, useInView, useMotionValue, useSpring } from 'framer-motion';
+import Skills from '@/components/Skills';
+import Experience from '@/components/Experience';
+
+const AnimatedNumbers = ({value}) =>{
+  const ref = useRef(null);
+  
+  const motionValue = useMotionValue(0);
+  const springValue = useSpring(motionValue,{duration:3000});
+  const isInView = useInView(ref,{once:true});
+
+  useEffect(()=>{
+    if(isInView){
+      motionValue.set(value);
+    }
+  },[isInView,value,motionValue]);
+
+  useEffect(()=>{
+    springValue.on("change",(latest)=>{
+      if(ref.current && latest.toFixed(0) <=value){
+        ref.current.textContent = latest.toFixed(0)
+      }
+    })
+  },[springValue,value]);
+
+   return <span ref={ref}></span>
+}
 
 const about = () => {
   return (
@@ -40,27 +67,29 @@ const about = () => {
             <div className='col-span-2 flex flex-col items-center justify-between'>
               <div className='flex flex-col items-end justify-center'>
                 <span className='inline-block text-7xl font-bold'>
-                  50+
+                <AnimatedNumbers value={50}/>+
                 </span>
                 <h2 className='text-xl font-medium capitalize text-dark/75'>Satisfied Clients</h2>
               </div>
 
               <div className='flex flex-col items-end justify-center'>
                 <span className='inline-block text-7xl font-bold'>
-                  40+
+                  <AnimatedNumbers value={40}/>+
                 </span>
                 <h2 className='text-xl font-medium capitalize text-dark/75'>Projects Completed</h2>
               </div>
               
               <div className='flex flex-col items-end justify-center'>
                 <span className='inline-block text-7xl font-bold'>
-                  4+
+                <AnimatedNumbers value={4}/>+
                 </span>
                 <h2 className='text-xl font-medium capitalize text-dark/75'>Years of Experience</h2>
               </div>
 
             </div>
           </div>
+          <Skills/>
+          <Experience/>
         </Layout>
       </main>
     </>

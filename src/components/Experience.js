@@ -1,0 +1,65 @@
+import React, { useRef } from 'react';
+import {motion,useScroll} from 'framer-motion';
+import LiIcon from './LiIcon';
+
+const Details =({position,company,companyLink,time,address,work})=>{
+  return(
+    <li className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
+      <LiIcon/>
+      <div>
+        <h3 className='capitalize font-bold text-2xl'>{position}&nbsp;<br></br>{company}</h3>
+        <span className='capitalize font-medium text-dark/75'>
+          {time} | {address}
+        </span>
+        <p className='font-medium w-full'>
+          {work}
+        </p>
+      </div>
+    </li>
+  )
+}
+const Experience = () => {
+  const ref = useRef(null);
+  const {scrollYProgress} = useScroll({
+    target: ref,
+    offset:["start end","center start"]
+  })
+  return (
+    <div className='my-64'>
+      <h2 className='font-bold text-8xl mb-32 w-full text-center'>
+        Experience
+      </h2>
+      <div className='
+        w-[75%]
+        mx-auto
+        relative
+      '
+      ref={ref}
+      >
+      <motion.div style={{scaleY: scrollYProgress}} className='absolute left-8 top-0 w-[4px] h-full bg-dark origin-top'/>
+        <ul className='w-full flex flex-col items-start justify-between  ml-4'>
+          <Details
+            position="Junior Frontend Engineer"
+            company="Studio DevHub"
+            time="Jan,2023-April,2023"
+            address="Dhaka,Bangladesh"
+            work="Worked in the frontend of different projects and implement reusable components. Managing the states of the 
+            component using the redux store. Collaborating with other developers and team members on projects. React, 
+            TypScript, Next.js, Material UI, Redux, Redux Toolkit." 
+          />
+                <Details
+            position="Junior Frontend Engineer Intern"
+            company="Studio DevHub"
+            time="Sep,2022-Dec,2022"
+            address="Dhaka,Bangladesh"
+            work="Learning and understanding the company's codebase and development process. Writing and testing code for front-end 
+features or components. React, TypeScript, Material UI
+" 
+          />
+        </ul>
+      </div>
+    </div>
+  )
+}
+
+export default Experience
