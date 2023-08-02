@@ -462,3 +462,25 @@ export const LinkArrow = ({ className, ...rest }) => (
   </svg>
 );
 
+export const GmailIcon = ({ className, ...rest}) =>(
+  <svg 
+    height="1em" 
+    width="1em" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 512 512"
+    {...rest}
+    className={`w-full h-auto ${className}`}
+    ><g fill="none" fill-rule="evenodd"><g fill-rule="nonzero"><path d="M34.91 448.818h81.454V251L0 163.727V413.91c0 19.287 15.622 34.91 34.91 34.91z" fill="#4285f4"/><path d="M395.636 448.818h81.455c19.287 0 34.909-15.622 34.909-34.909V163.727L395.636 251z" fill="#34a853"/><path d="M395.636 99.727V251L512 163.727v-46.545c0-43.142-49.25-67.782-83.782-41.891z" fill="#fbbc04"/></g><path d="M116.364 251V99.727L256 204.455 395.636 99.727V251L256 355.727z" fill="#ea4335"/><path d="M0 117.182v46.545L116.364 251V99.727L83.782 75.291C49.25 49.4 0 74.04 0 117.18z" fill="#c5221f" fill-rule="nonzero"/></g></svg>
+)
+
+
+export const FacebookIcon = ({className, ...rest}) =>(
+  <svg 
+    clipRule="evenodd" fillRule="evenodd" height="1em" viewBox="0 0 512 512"  width="1em" xmlns="http://www.w3.org/2000/svg"
+    imageRendering="optimizeQuality" shapeRendering="geometricPrecision" textRendering="geometricPrecision"
+    {...rest}
+    className={`w-full h-auto ${className}`}
+    ><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="21085.72" x2="21085.72" y1="18249.39" y2="25150.62"><stop offset="0" stop-color="#00b2ff"/><stop offset="1" stop-color="#006aff"/></linearGradient><circle cx="21085.72" cy="21590" fill="#fff" r="4078.9"/><path d="M21085.72 18309.17c1811.95 0 3280.83 1468.88 3280.83 3280.83s-1468.88 3280.83-3280.83 3280.83-3280.83-1468.88-3280.83-3280.83 1468.88-3280.83 3280.83-3280.83z" fill="url(#a)"/><path d="M21512.01 24843.29v-2534.17h714.43l94.7-891.91h-809.13l1.2-446.44c0-232.63 22.1-357.22 356.24-357.22h446.68v-892.06h-714.59c-858.35 0-1160.42 432.65-1160.42 1160.34v535.45h-535.07v891.99h535.07v2498.09c208.45 41.53 423.95 63.47 644.6 63.47a3310.9 3310.9 0 0 0 426.29-27.54z" fill="#fff" fill-rule="nonzero"/></svg>
+
+)
+
