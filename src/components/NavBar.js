@@ -55,10 +55,10 @@ const NavBar = () => {
       </nav>
       
       <nav className='flex items-center justify-center flex-wrap'>
-        <motion.a href="/" target={"_blank"} whileHover={{y:-4}} whileTap={{scale:0.9}} className="w-6 mr-3">
+        <motion.a href="https://www.linkedin.com/in/mahmud-ur-rahman-a3a1b8191" target={"_blank"} whileHover={{y:-4}} whileTap={{scale:0.9}} className="w-6 mr-3">
           <LinkedInIcon/>
         </motion.a>
-        <motion.a href="/" target={"_blank"} whileHover={{y:-4}} whileTap={{scale:0.9}} className="w-6 mx-3">
+        <motion.a href="https://github.com/IspahanRahman" target={"_blank"} whileHover={{y:-4}} whileTap={{scale:0.9}} className="w-6 mx-3">
           <GithubIcon />
         </motion.a>
         <motion.a href="mailto:ispahanrahman133@gmail.com" target={"_blank"} whileHover={{y:-4}} whileTap={{scale:0.9}} className="w-6 mx-3">
