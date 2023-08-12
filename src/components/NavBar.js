@@ -95,16 +95,16 @@ const NavBar = () => {
       </nav>
       
       <nav className='flex items-center justify-center flex-wrap mt-2'>
-        <motion.a href="/" target={"_blank"} whileHover={{y:-4}} whileTap={{scale:0.9}} className="w-6 mr-3 sm:mx-1">
+        <motion.a href="https://www.linkedin.com/in/mahmud-ur-rahman-a3a1b8191" target={"_blank"} whileHover={{y:-4}} whileTap={{scale:0.9}} className="w-6 mr-3 sm:mx-1">
           <LinkedInIcon/>
         </motion.a>
-        <motion.a href="/" target={"_blank"} whileHover={{y:-4}} whileTap={{scale:0.9}} className="w-6 mx-3 text-light dark:text-dark sm:mx-1">
+        <motion.a href="https://github.com/IspahanRahman" target={"_blank"} whileHover={{y:-4}} whileTap={{scale:0.9}} className="w-6 mx-3 text-light dark:text-dark sm:mx-1">
           <GithubIcon />
         </motion.a>
         <motion.a href="mailto:ispahanrahman133@gmail.com" target={"_blank"} whileHover={{y:-4}} whileTap={{scale:0.9}} className="w-6 mx-3 sm:mx-1">
           <GmailIcon />
         </motion.a>
-        <motion.a href="mailto:ispahanrahman133@gmail.com" target={"_blank"} whileHover={{y:-4}} whileTap={{scale:0.9}} className="w-6 ml-3 text-light sm:mx-1">
+        <motion.a href="mailto:ispahanrahman133@gmail.com" target={"_blank"} whileHover={{y:-4}} whileTap={{scale:0.9}} className="w-6 ml-3  sm:mx-1  dark:text-dark">
           <FacebookIcon />
         </motion.a>
 

@@ -8,6 +8,7 @@ import { GithubIcon } from '@/components/Icon'
 import Messenger_Clone from "../../public/images/projects/Messenger_Clone.PNG";
 import Netflix from "../../public/images/projects/Netflix.PNG";
 import { motion } from 'framer-motion'
+import TransitionEffect from '@/components/TransitionEffect'
 
 const FramerImage = motion(Image);
 
@@ -51,6 +52,7 @@ const projects = () => {
           <title>Mahmud | Projects Page</title>
           <meta name='description' content='This is the about page of Md. Mahmud-Ur-Rahman'/>
       </Head>
+      <TransitionEffect/>
       <main className='w-full mb-16 flex flex-col items-center justify-center'>
         <Layout className="pt-16">
           <AnimatedText text="Imagination Trumps Knowledge!" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>

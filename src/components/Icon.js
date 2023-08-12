@@ -475,12 +475,14 @@ export const GmailIcon = ({ className, ...rest}) =>(
 
 
 export const FacebookIcon = ({className, ...rest}) =>(
-  <svg 
-    clipRule="evenodd" fillRule="evenodd" height="1em" viewBox="0 0 512 512"  width="1em" xmlns="http://www.w3.org/2000/svg"
-    imageRendering="optimizeQuality" shapeRendering="geometricPrecision" textRendering="geometricPrecision"
+<svg
+  style={{color: "red"}}
+  xmlns="http://www.w3.org/2000/svg" 
+  width="1em" 
+  height="1em" 
+  viewBox="0 0 512 512"
     {...rest}
-    className={`w-full h-auto ${className}`}
-    ><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="21085.72" x2="21085.72" y1="18249.39" y2="25150.62"><stop offset="0" stop-color="#00b2ff"/><stop offset="1" stop-color="#006aff"/></linearGradient><circle cx="21085.72" cy="21590" fill="#fff" r="4078.9"/><path d="M21085.72 18309.17c1811.95 0 3280.83 1468.88 3280.83 3280.83s-1468.88 3280.83-3280.83 3280.83-3280.83-1468.88-3280.83-3280.83 1468.88-3280.83 3280.83-3280.83z" fill="url(#a)"/><path d="M21512.01 24843.29v-2534.17h714.43l94.7-891.91h-809.13l1.2-446.44c0-232.63 22.1-357.22 356.24-357.22h446.68v-892.06h-714.59c-858.35 0-1160.42 432.65-1160.42 1160.34v535.45h-535.07v891.99h535.07v2498.09c208.45 41.53 423.95 63.47 644.6 63.47a3310.9 3310.9 0 0 0 426.29-27.54z" fill="#fff" fill-rule="nonzero"/></svg>
+    className={`w-full h-auto ${className}`}> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/> </svg>
 
 )
 

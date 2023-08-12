@@ -16,7 +16,7 @@ const Details =({position,company,companyLink,time,address,work})=>{
         <span className='capitalize font-medium text-dark/75 xs:text-sm'>
           {time} | {address}
         </span>
-        <p className='font-medium w-full md:text-sm'>
+        <p className='font-medium text-justify w-full md:text-sm'>
           {work}
         </p>
       </motion.div>
@@ -45,6 +45,13 @@ const Experience = () => {
       >
       <motion.div style={{scaleY: scrollYProgress}} className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]'/>
         <ul className='w-full flex flex-col items-start justify-between  ml-4 xs:ml-2'>
+        <Details
+            position="Junior Software Engineer"
+            company="Code Studio"
+            time="Aug,2023-Present"
+            address="Rajshahi,Bangladesh"
+            work="Developing and maintaining both backend and frontend components of applications. I work extensively with Node.js for backend development and MySQL for database management. Develop robust and scalable backend services using Node.js, handling various APIs, data manipulation, and business logic implementation. Additionally, I contribute to frontend development using HTML, CSS, JavaScript, and EJS. " 
+          />
           <Details
             position="Junior Frontend Engineer"
             company="Studio DevHub"
